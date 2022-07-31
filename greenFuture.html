@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Future</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <img src="Images/Green Future Logo.png" alt="Website logo" />
+    </div>
+    <fieldset>
+      <legend>Create a goal</legend>
+      <label for="quantity" id="firstLabel"
+        >What size would you like your goal to be?</label
+      ><br />
+      <select id="quan" name="quan">
+        <option>-- No selection --</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option></select
+      ><br />
+      <label for="type">What domain would you like to benefit?</label><br />
+      <select id="type" name="type">
+        <option>-- No selection --</option>
+        <option>Land</option>
+        <option>Sea</option>
+        <option>Air</option></select
+      ><br />
+      <label for="long">How long should this goal take?</label><br />
+      <select id="long" name="long">
+        <option>-- No selection --</option>
+        <option>Less than half a day</option>
+        <option>Around 1 day</option>
+        <option>More than 1 day</option></select
+      ><br />
+      <label for="How">How will you go about doing it?</label><br />
+      <select id="How" name="How">
+        <option>-- No selection --</option>
+        <option>Via the internet</option>
+        <option>In person</option></select
+      ><br />
+      <label for="many">How many people will participate?</label><br />
+      <select id="many" name="many">
+        <option>-- No selection --</option>
+        <option>Just me</option>
+        <option>A few people</option>
+        <option>A large group of people</option></select
+      ><br />
+      <button class="button" type="button" onclick="onClick()">Generate</button>
+    </fieldset>
+    <div id="goalCollecter">
+      <div class="currentGoals">
+        <h2>Your On Going Goals:</h2>
+        <div id="red"></div>
+        <p id="redNum">- 0</p>
+        <div id="yellow"></div>
+        <p id="yellowNum">- 0</p>
+        <div id="green"></div>
+        <p id="greenNum">- 0</p>
+        <div>
+          <button id="Clear" onclick="clearDiv('goalMaster')">Clear</button>
+        </div>
+      </div>
+      <div id="goalMaster"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
